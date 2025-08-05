@@ -28,6 +28,8 @@ will record GPX traces if you enable the "Trip recording" plugin.
 The demonstration below uses the OsmAnd app for iOS (with some examples from an Android
 device when things look different).
 
+# Initial setup
+
 When you first install and open the app, you'll see a screen like this:
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
@@ -84,9 +86,8 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
-Choose "Allow While Using App" if you
-will be keeping the app open the whole time you're collecting data. Otherwise, you want to set it
-to track your location all the time.
+Select the option to allow the app to record your location all the time, even when 
+the app is closed. 
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
 here("screenshots",
@@ -112,18 +113,10 @@ here("screenshots",
 ```
 
 
-On an Android phone, you may need to add this plugin from the Plugin manager
+You may need to add the Trip Recording plugin from the Plugin manager
 (find it towards the bottom of the side menu, right before settings).
 
-On an iPhone, you'll see a list of plugins with white checkboxes next to them. 
-
-```{r, echo=FALSE, message=FALSE, out.width = '30%'}
-here("screenshots",
-     "unchecked-trip-rec.jpeg") |>
-  knitr::include_graphics()
-```
-
-On an Android, it will look like this:
+It will look like this:
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
 here("screenshots",
@@ -139,7 +132,12 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
-Now the checkbox or icon will be highlighted in orange. Tap on "< My Tracks". 
+Now the checkbox or icon will be highlighted in orange. 
+
+
+# Start recording your GPS trace
+
+Tap on "< My Places" and go to the "Tracks" tab. 
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
 here("screenshots",
@@ -147,30 +145,12 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
-You'll see a banner that says "Currently recording track" with a gray save icon and
-a red dot. Tap the red dot. 
+You'll see a banner that says "New track" and a button that says "Start Recording".
+Tap that button.
 
-```{r, echo=FALSE, message=FALSE, out.width = '30%'}
-here("screenshots",
-     "IMG_0498.PNG") |>
-  knitr::include_graphics()
-```
-
-
-On an Android device, the "Start Recording" button is somewhat more 
-clearly labeled.
-
-
-```{r, echo=FALSE, message=FALSE, out.width = '30%'}
-here("screenshots",
-     "image000000[3].PNG") |>
-  knitr::include_graphics()
-```
-
-
-A dialog will pop up where, if you want, you can 
+A dialog will pop up where you can 
 adjust the recording interval. By default, it will record your location every five 
-seconds. Setting it to a shorter interval (e.g. every one second) will improve the
+seconds. Change it to every one second to improve the
 precision of your GPS trace.
 
 Click OK.
@@ -181,17 +161,16 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
-Now you should see a black square instead of a red circle. The app is currently recording your
-location. Start walking along the path you want to record. When you have finished your path, 
-tap the black square to stop recording. Then tap the save icon.
+Now you should see stop and save icons. The app is currently recording your
+location. 
 
-```{r, echo=FALSE, message=FALSE, out.width = '30%'}
-here("screenshots",
-     "IMG_0505.PNG") |>
-  knitr::include_graphics()
-```
+Close the app and open the Survey CTO app to record passenger boardings and 
+alightings throughout the trip.
 
-On an Android device the start, stop, and save icons are more clearly labeled.
+# Stop recording
+
+When your trip is finished, tap the stop icon, then tap the save icon.
+
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
 here("screenshots",
@@ -209,6 +188,9 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
+
+# Export GPS trace
+
 Tap the name of your track and it will open in a map.
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
@@ -217,15 +199,7 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
-Tap the share icon at the bottom of the screen and email the GPX file to yourself.
-
-```{r, echo=FALSE, message=FALSE, out.width = '30%'}
-here("screenshots",
-     "IMG_0501.PNG") |>
-  knitr::include_graphics()
-```
-
-To share the file from an Android device, you'll need to click the "Options"
+To share the file, click the "Options"
 button on the bottom left corner of your screen.
 
 ```{r, echo=FALSE, message=FALSE, out.width = '30%'}
@@ -242,3 +216,5 @@ here("screenshots",
   knitr::include_graphics()
 ```
 
+ Email the trace to... [fill in email address]
+and include the following information.
